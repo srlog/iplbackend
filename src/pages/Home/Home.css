@@ -1,0 +1,95 @@
+/* src/pages/Home.css */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif; /* Add a font family */
+  background-color: #f7f7f7; /* Light background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; /* Distribute header elements */
+  align-items: center; /* Vertically align items */
+}
+
+.home-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333; /* Darker title color */
+}
+
+.home-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Add spacing between filters */
+}
+
+.home-filters label {
+  margin-bottom: 10px;
+}
+
+.home-buttons {
+  margin-top: 10px;
+}
+
+.matches-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-content: center;
+}
+
+.no-matches {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Add some color and hover effects */
+.home-filters select,
+.home-filters input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.home-filters select:hover,
+.home-filters input[type="date"]:hover {
+  border-color: #007bff; /* Blue border on hover */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow */
+}
+
+.home-filters input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.home-buttons button {
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-buttons button:hover {
+  background-color: #0069d9; /* Darker blue on hover */
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.checkbox-group label {
+  margin-bottom: 5px;
+}
+

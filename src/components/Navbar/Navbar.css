@@ -1,0 +1,113 @@
+/* Navbar Container */
+.navbar {
+    background: linear-gradient(135deg, #00529B, #00529B);
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Brand */
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* color:white; */
+  }
+  
+  .navbar-brand a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Navigation List */
+  .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Navigation Items */
+  .nav-item {
+    margin-left: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Underline animation */
+  .nav-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: red;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-item a:hover::after {
+    width: 100%;
+  }
+  
+  /* Hover effect */
+  .nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
+  

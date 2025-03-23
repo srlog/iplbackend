@@ -1,0 +1,162 @@
+/* Admin Matches Page Container */
+.admin-matches-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.admin-matches-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-matches-header h2 {
+  color: #00529b; /* IPL Blue */
+  font-size: 2rem;
+}
+
+.add-match-button {
+  background-color: #e50914; /* IPL Red */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-match-button:hover {
+  background-color: #b20710;
+}
+
+/* Add Match Form */
+.add-match-form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-match-form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.add-match-form .form-row label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.add-match-form .form-row input,
+.add-match-form .form-row select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-match-form .form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.save-match-button {
+  background-color: #00529b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-match-button:hover {
+  background-color: #004080;
+}
+
+.cancel-match-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-match-button:hover {
+  background-color: #c82333;
+}
+
+/* Admin Matches List */
+.admin-matches-list {
+  display: grid;
+  grid-template-columns: minmax(800px, 1fr);
+  gap: 10px;
+}
+
+.no-matches {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Admin Match Card */
+.admin-match-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-match-card .match-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.admin-match-card .card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #0069d9;
+}
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}

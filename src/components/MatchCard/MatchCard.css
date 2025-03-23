@@ -1,0 +1,161 @@
+.match-card {
+    position: relative;
+    width: 300px;
+    min-height: 420px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    border-top: 5px solid #00529B; /* IPL Blue accent */
+  }
+  
+  .match-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Match Header */
+  .match-header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .match-header h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #00529B;
+  }
+  
+  /* Match Teams */
+  .match-teams {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #00529B;
+  }
+  
+  .team-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .vs {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00529B;
+  }
+  
+  /* Match Details */
+  .match-details {
+    flex-grow: 1;
+    color: #444;
+  }
+  
+  .match-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .match-details .icon {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #00529B;
+  }
+  
+  /* Seat Tag */
+  .seat-tag {
+    margin-left: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .limited-seats {
+    background-color: #ffcc00;
+    color: #333;
+  }
+  
+  .no-seats {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  /* Ticket Container */
+  .ticket-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .match-card:hover .ticket-container {
+    opacity: 1;
+  }
+  
+  /* Seat Selection */
+  .seat-select {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .seat-select label {
+    font-weight: bold;
+    color: #00529B;
+  }
+  
+  .seat-select input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Buy Tickets Button */
+  .buy-ticket {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #00529B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-ticket:hover {
+    background-color: #004080;
+  }
+  
